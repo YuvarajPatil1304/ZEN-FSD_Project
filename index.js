@@ -6,10 +6,12 @@ import cookieParser from 'cookie-parser'
 dotenv.config()
 import { UserRouter } from './routes/user.js'
 
+const BASE_URL = process.env.BASE_URL;
+
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:5173"],
+    origin: [`${BASE_URL}`],
     credentials: true
 }))
 app.use(cookieParser())
