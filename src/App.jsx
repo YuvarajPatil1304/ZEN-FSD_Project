@@ -12,8 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={Home}></Route>
-        <Route path="/signup" Component={Signup}></Route>
+        <Route path="/home" Component={Home}></Route>
+        <Route path="/" Component={Signup}></Route>
         <Route path="/login" Component={Login}></Route>
         <Route path="/forgotPassword" Component={ForgotPassword}></Route>
         <Route path="/resetPassword/:token" Component={ResetPassword}></Route>      
