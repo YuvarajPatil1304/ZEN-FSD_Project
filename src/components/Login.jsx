@@ -17,7 +17,7 @@ function Login() {
             password 
         }).then(response => {
             if(response.data.status){
-                navigate('/')
+                navigate('/home')
             }
         }).catch(err => {
             console.log(err);
@@ -38,7 +38,7 @@ function Login() {
 
                 <button type='submit'>Login</button>
                 <Link to="/forgotPassword">Forgot Password?</Link>
-                <p>Don't Have Account? <Link to="/signup">Sign Up</Link></p>
+                <p>Don't Have Account? <Link to="/">Sign Up</Link></p>
             </form>
         </div>
     )
