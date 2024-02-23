@@ -12,7 +12,7 @@ function Login() {
     Axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:3000/auth/login', {
+        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/login', {
             email, 
             password 
         }).then(response => {
