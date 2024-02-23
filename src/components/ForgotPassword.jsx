@@ -9,7 +9,7 @@ function ForgotPassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:3000/auth/forgotPassword', {
+        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/forgotPassword', {
             email, 
         }).then(response => {
             if(response.data.status){
