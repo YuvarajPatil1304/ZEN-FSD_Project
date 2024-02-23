@@ -11,7 +11,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:3000/auth/signup', {
+        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/signup', {
             username, 
             email, 
             password 
