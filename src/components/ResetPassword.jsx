@@ -11,7 +11,7 @@ function ResetPassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:3000/auth/resetPassword/'+token, {
+        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/resetPassword/'+token, {
             password, 
         }).then(response => {
             if(response.data.status){
