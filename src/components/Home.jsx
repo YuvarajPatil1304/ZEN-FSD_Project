@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios'
 import '../App.css'
 import { Link, useNavigate } from 'react-router-dom'
-import { User } from '../../../server/models/User'
 
 function Home() {
     const navigate = useNavigate()
