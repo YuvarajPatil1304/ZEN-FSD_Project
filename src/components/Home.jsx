@@ -2,12 +2,13 @@ import React from 'react'
 import axios from 'axios'
 import '../App.css'
 import { Link, useNavigate } from 'react-router-dom'
+const BASE_URL = process.env.BASE_URL;
 
 function Home() {
     const navigate = useNavigate()
     axios.defaults.withCredentials = true;
     const handleLogout = () => {
-        axios.get('https://zen-fsd-project-backend.onrender.com/auth/logout')
+        axios.get(`${BASE_URL}/auth/logout`)
         .then(res => {
             if(res.data.status) {
                 navigate('/login')
