@@ -5,6 +5,8 @@ import { User } from '../models/User.js'
 import jwt from 'jsonwebtoken'
 import nodemailer from 'nodemailer'
 
+const BASE_URL = process.env.BASE_URL;
+
 router.post('/signup', async (req, res) => {
     const { username, email, password } = req.body;
     const user = await User.findOne({ email })
@@ -56,7 +58,7 @@ router.post('/forgotPassword', async (req, res) => {
             from: '1rn18cs090.saiyuvarajpatil@gmail.com',
             to: email,
             subject: 'Reset Password',
-            text: `http://localhost:5173/resetPassword/${token}`
+            text: `${BASE_URL}/resetPassword/${token}`
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
