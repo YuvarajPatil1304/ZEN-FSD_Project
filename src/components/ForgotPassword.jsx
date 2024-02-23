@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../App.css'
 import Axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom';
+const BASE_URL = process.env.BASE_URL;
 
 function ForgotPassword() {
     const [email, setEmail] = useState('');
@@ -9,7 +10,7 @@ function ForgotPassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/forgotPassword', {
+        Axios.post(`${BASE_URL}/auth/forgotPassword`, {
             email, 
         }).then(response => {
             if(response.data.status){
