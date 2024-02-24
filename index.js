@@ -9,7 +9,7 @@ import { UserRouter } from './routes/user.js'
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ['https://zen-fsd-project-backend.onrender.com/'],
+    origin: ['https://zen-fsd-project-frontend.onrender.com'],
     methods: ['GET', 'POST'],
     credentials: true
 }))
