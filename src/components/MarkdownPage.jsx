@@ -11,7 +11,7 @@ function MarkdownPage() {
         axios.get('https://zen-fsd-project-backend.onrender.com/auth/verify')
         .then(res => {
             if(res.data.status){
-
+                console.log(res.data.status);
             } else {
                 navigate('/')
             }
