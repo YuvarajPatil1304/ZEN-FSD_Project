@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../App.css'
 import Axios from 'axios'
 import { useNavigate, Link, useParams } from 'react-router-dom';
-const BASE_URL = process.env.BASE_URL;
 
 function ResetPassword() {
     const [password, setPassword] = useState('');
@@ -12,7 +11,7 @@ function ResetPassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post(`${BASE_URL}/auth/resetPassword/`+token, {
+        Axios.post('https://zen-fsd-project-backend.onrender.com/auth/resetPassword/'+token, {
             password, 
         }).then(response => {
             if(response.data.status){
