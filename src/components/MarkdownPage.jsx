@@ -8,7 +8,7 @@ function MarkdownPage() {
     const navigate = useNavigate()
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get(https://zen-fsd-project-backend.onrender.com/auth/verify')
+        axios.get('https://zen-fsd-project-backend.onrender.com/auth/verify')
         .then(res => {
             if(res.data.status){
 
