@@ -15,6 +15,7 @@ function MarkdownPage() {
             } else {
                 navigate('/')
             }
+            console.log(res);
         })
     }, [])
   return (
