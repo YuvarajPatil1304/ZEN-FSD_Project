@@ -17,7 +17,7 @@ function MarkdownPage() {
             if(res.data.status){
                 console.log(res.data.status);
             } else {
-                navigate('/')
+                navigate('/');
             }
             console.log(res);
         })
