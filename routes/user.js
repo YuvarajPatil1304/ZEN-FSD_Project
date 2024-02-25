@@ -56,7 +56,7 @@ router.post('/forgotPassword', async (req, res) => {
             from: '1rn18cs090.saiyuvarajpatil@gmail.com',
             to: email,
             subject: 'Reset Password',
-            text: `https://zen-fsd-project-frontend.onrender.com/resetPassword/${token}`
+            text: 'https://zen-fsd-project-frontend.onrender.com/resetPassword/:token'
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
