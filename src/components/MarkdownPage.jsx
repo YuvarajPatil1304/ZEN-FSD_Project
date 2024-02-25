@@ -16,6 +16,7 @@ function MarkdownPage() {
         .then(res => {
             if(res.data.status){
                 console.log(res.data.status);
+                console.error(res);
             } else {
                 navigate('/');
             }
