@@ -3,6 +3,10 @@ import '../App.css'
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Markdown from './Markdown/Markdown_Viewer/Markdown'
+import MainLayout from '../components/main-layout/main-layout';
+import Editor from '../components/editor/editor';
+import Preview from '../components/preview/preview';
+import MarkdownProvider from '../providers/markdown-provider';
 
 function MarkdownPage() {
     const navigate = useNavigate()
@@ -19,7 +23,18 @@ function MarkdownPage() {
         })
     }, [])
   return (
-    <div><Markdown/></div>
+    <div>
+    <MarkdownProvider>
+    <MainLayout>
+      <MainLayout.Column>
+        <Editor />
+      </MainLayout.Column>
+      <MainLayout.Column>
+        <Preview />
+      </MainLayout.Column>
+    </MainLayout>
+    </MarkdownProvider>
+    </div>
   )
 }
 
