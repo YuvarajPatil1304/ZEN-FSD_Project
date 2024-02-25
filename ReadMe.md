@@ -5,18 +5,18 @@
 
 Technologies Used - React
 
-FrontEnd Live - https://zen-fsd-project-frontend.onrender.com
+Frontend Live - https://zen-fsd-project-frontend.onrender.com
 
-FrontEnd Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/client
+Frontend Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/client
 
 
 ### BACK-END:
 
 Technologies Used - NodeJS
 
-BackEnd Live - https://zen-fsd-project-backend.onrender.com
+Backend Live - https://zen-fsd-project-backend.onrender.com
 
-BackEnd Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/server
+Backend Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/server
 
 
 ### DATABASE:
