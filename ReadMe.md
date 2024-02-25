@@ -1,13 +1,19 @@
 ZEN-FSD_Project
 
 FRONT-END:
+
 Technologies Used - React
+
 FrontEnd Live - https://zen-fsd-project-frontend.onrender.com
+
 FrontEnd Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/client
 
 BACK-END:
+
 Technologies Used - NodeJS
+
 BackEnd Live - https://zen-fsd-project-backend.onrender.com
+
 BackEnd Github Link - https://github.com/YuvarajPatil1304/ZEN-FSD_Project/tree/server
 
 DATABASE:
