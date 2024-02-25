@@ -3,10 +3,10 @@ import '../App.css'
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Markdown from './Markdown/Markdown_Viewer/Markdown'
-import MainLayout from '../components/main-layout/main-layout';
-import Editor from '../components/editor/editor';
-import Preview from '../components/preview/preview';
-import MarkdownProvider from '../providers/markdown-provider';
+import MarkdownProvider from './Markdown/providers/markdown-provider'
+import MainLayout from './Markdown/components/main-layout/main-layout'
+import Editor from './Markdown/components/editor/editor'
+import Preview from './Markdown/components/preview/preview'
 
 function MarkdownPage() {
     const navigate = useNavigate()
