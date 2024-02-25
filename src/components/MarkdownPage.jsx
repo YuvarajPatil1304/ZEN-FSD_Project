@@ -21,6 +21,9 @@ function MarkdownPage() {
             }
             console.log(res);
         })
+        .catch(err)(
+            console.log(err);
+        )
     }, [])
   return (
     <div>
