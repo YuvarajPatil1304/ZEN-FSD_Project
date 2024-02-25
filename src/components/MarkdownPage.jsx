@@ -16,14 +16,13 @@ function MarkdownPage() {
         .then(res => {
             if(res.data.status){
                 console.log(res.data.status);
-                console.error(res);
             } else {
                 navigate('/');
             }
             console.log(res);
         })
-        .catch(err => {
-            console.error(err);
+        .catch(res => {
+            console.error(res);
         });
     }, [])
   return (
